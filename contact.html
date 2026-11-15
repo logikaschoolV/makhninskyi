@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toyota — Контакти</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-box">
+        <img src="image 1 (1).png" alt="Toyota Logo" class="logo-img">
+        <span class="logo-text">TOYOTA</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Головна</a>
+        <a href="catalog.html" class="nav-link">Модельний ряд</a>
+        <a href="contact.html" class="nav-link active">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="catalog" style="padding: 50px 0;">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-subtitle">Зв'язок з нами</span>
+          <h2 class="section-title">Контакти та тест-драйв</h2>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px;" class="contact-responsive">
+        <div style="background: var(--bg-card); padding: 30px; border-radius: 10px;">
+          <h3 style="margin-bottom: 20px; font-size: 22px;">Дилерський центр</h3>
+          <p style="margin-bottom: 15px; color: var(--text-muted);"><i class="fa-solid fa-location-dot" style="color: var(--accent-red); margin-right: 10px;"></i> м. Волочиськ, вул. Автомобільна, 100</p>
+          <p style="margin-bottom: 15px; color: var(--text-muted);"><i class="fa-solid fa-phone" style="color: var(--accent-red); margin-right: 10px;"></i> 0 800 300 100</p>
+          <p style="margin-bottom: 15px; color: var(--text-muted);"><i class="fa-solid fa-envelope" style="color: var(--accent-red); margin-right: 10px;"></i> info@toyota.ua</p>
+        </div>
+
+        <div style="background: var(--bg-card); padding: 30px; border-radius: 10px;">
+          <h3 style="margin-bottom: 20px; font-size: 22px;">Записатися на тест-драйв</h3>
+          <form onsubmit="event.preventDefault(); alert('Дякуємо! Вашу заявку надіслано.');">
+            <div style="margin-bottom: 15px;">
+              <input type="text" placeholder="Ваше ім'я" required style="width: 100%; padding: 12px; background: #282828; border: 1px solid #555; color: #fff; border-radius: 6px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+              <input type="tel" placeholder="Номер телефону" required style="width: 100%; padding: 12px; background: #282828; border: 1px solid #555; color: #fff; border-radius: 6px;">
+            </div>
+            <button type="submit" class="btn-card" style="cursor: pointer;">ВІДПРАВИТИ ЗАЯВКУ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="logo-box"><span class="logo-text">TOYOTA</span></div>
+        <p class="footer-text">Офіційний дилерський центр Toyota.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Моделі</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="catalog.html">Модельний ряд</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Контакти</h4>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
